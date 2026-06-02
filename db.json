@@ -1,0 +1,22 @@
+{
+    "employees":[
+        {
+            "id":1,
+            "name":"Pushpendra Singh",
+            "email":"pushpendra.singh@example.com",
+            "department":"Clinical Data Management",
+            "salary":50000,
+            "joiningDate":"2026-06-01",
+            "IsActive":true
+        },
+        {
+            "id":2,
+            "name":"Mahendra Singh",
+            "email":"mahendra.singh@example.com",
+            "department":"Clinical Data Management",
+            "salary":45000,
+            "joiningDate":"2026-05-15",
+            "IsActive":true
+        }
+    ]
+}

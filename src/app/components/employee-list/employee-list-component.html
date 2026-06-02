@@ -1,0 +1,40 @@
+<div class="card shadow-sm">
+    <div class="card-header d-flex justify-content-between align-item-center">
+        <h4 class="mb-0">Employee List</h4>
+
+        <a routerLink ="/employees/add" class="btn btn-primary">
+            Add Employee
+        </a>
+    </div>
+
+    <div class="card-body">
+        @if (loading){
+            <div class="alert alert-info">
+                Loading employees...
+            </div>
+        }
+
+        @if (errorMessage){
+            <div class="alert alert-danger">
+                {{ errorMessage }}
+            </div>
+        }
+
+        <div class="table-responsive">
+            <table class="table table-borderd table-hover align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>S. No.</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Salary</th>
+                        <th>Joining Date</th>
+                        <th>Status</th>
+                        <th style="width: 230px;">Action</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
